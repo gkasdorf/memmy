@@ -192,6 +192,8 @@ const initialState: Partial<SettingsStore> = {
 
   commentJumpButton: false,
 
+export const useHapticsEnabled = (): boolean =>
+  useSettingsStore((state) => state.hapticsEnabled);
   hapticsEnabled: true,
   hapticsStrength: 'medium',
 
